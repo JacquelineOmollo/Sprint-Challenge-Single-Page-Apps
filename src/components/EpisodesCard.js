@@ -1,13 +1,16 @@
 import React from "react";
+import { Card, Icon } from "semantic-ui-react";
 
-function EpisodesCard(props) {
-  return (
-    <span className="episode-card">
-      <h3>{props.name}</h3>
+const EpisodesCard = props => (
+  <Card>
+    {/* <span className="episode-card"> */}
+    <Card.Content>
+      <Card.Header>{props.name}</Card.Header>
       <h4>Episode number: {props.number}</h4>
-      <p>Air Date: {props.airDate}</p>
-    </span>
-  );
-}
+      <p>Air Date: {props.air_date}</p>
+      {/* // </span> */}
+    </Card.Content>
+  </Card>
+);
 
 export default EpisodesCard;
