@@ -7,7 +7,7 @@ function LocationCard(props) {
       <h2>{props.name}</h2>
       <p>{props.type}</p>
       <p>{props.dimension}</p>
-      <p>{props.residents}</p>
+      <p>{props.residents.id}</p>
     </span>
   );
 }
