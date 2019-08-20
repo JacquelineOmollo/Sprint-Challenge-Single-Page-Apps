@@ -12,7 +12,7 @@ const LocationCard = props => (
       <Card.Content extra>
         <a>
           <Icon name="user" />
-          Residents: {props.residents.id}
+          Residents: {props.residents.length}
         </a>
       </Card.Content>
     </Card.Content>

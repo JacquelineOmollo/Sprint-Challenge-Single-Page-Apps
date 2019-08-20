@@ -17,7 +17,7 @@ function CharacterCard(props) {
       <Card.Content extra>
         <a>
           <Icon name="user" />
-          Episodes {props.id}
+          Episodes {props.episode}
         </a>
       </Card.Content>
     </Card>
