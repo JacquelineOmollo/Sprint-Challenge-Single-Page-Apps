@@ -19,7 +19,7 @@ function LocationsList() {
   }, []);
 
   return (
-    <div>
+    <div className="character-list grid-view">
       {location.map(item => (
         <LocationCard
           name={item.name}

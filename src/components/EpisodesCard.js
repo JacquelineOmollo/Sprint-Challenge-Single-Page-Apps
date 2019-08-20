@@ -7,7 +7,12 @@ const EpisodesCard = props => (
     <Card.Content>
       <Card.Header>{props.name}</Card.Header>
       <h4>Episode number: {props.number}</h4>
-      <p>Air Date: {props.air_date}</p>
+      <Card.Content extra>
+        <a>
+          <Icon name="user" />
+          Air Date: {props.air_date}
+        </a>
+      </Card.Content>
       {/* // </span> */}
     </Card.Content>
   </Card>

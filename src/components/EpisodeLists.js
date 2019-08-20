@@ -19,7 +19,7 @@ function EpisodesList() {
   }, []);
 
   return (
-    <section>
+    <section className="character-list grid-view">
       {shows.map(item => (
         <EpisodesCard
           name={item.name}

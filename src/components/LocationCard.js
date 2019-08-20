@@ -1,18 +1,22 @@
 import React from "react";
-import { Card } from "semantic-ui-react";
+import { Card, Icon } from "semantic-ui-react";
 
 const LocationCard = props => (
   //   ///name, type, dimension, residents
-  <Card.Group className="cards">
-    <Card>
-      <Card.Content>
-        <Card.Header>{props.name}</Card.Header>
-        <p>{props.type}</p>
-        <p>{props.dimension}</p>
-        <p>{props.residents.id}</p>
+
+  <Card>
+    <Card.Content>
+      <Card.Header>{props.name}</Card.Header>
+      <p>{props.type}</p>
+      <p>{props.dimension}</p>
+      <Card.Content extra>
+        <a>
+          <Icon name="user" />
+          Residents: {props.residents.id}
+        </a>
       </Card.Content>
-    </Card>
-  </Card.Group>
+    </Card.Content>
+  </Card>
 );
 
 export default LocationCard;
