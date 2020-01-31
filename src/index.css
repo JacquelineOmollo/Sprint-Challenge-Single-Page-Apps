@@ -27,7 +27,7 @@ main {
 .grid-view div.card.ui {
   margin: 1.25rem;
 }
-/*
+/* 
 .main-img {
   display: block;
   border-radius: 100%;
@@ -37,3 +37,8 @@ main {
 header h1 {
   text-align: center;
 }
+
+/* Cards {
+  display: flex;
+  flex-direction: row;
+} */
